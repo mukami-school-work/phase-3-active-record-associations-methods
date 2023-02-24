@@ -27,7 +27,7 @@ In the previous lessons, we had a similar set of associations between games,
 reviews and users, where the reviews table joined between our users and games.
 
 While the models are different for this lab, our approach will be the same. By
-writing a few migrations and making use of the appropriate Active Record macros,
+writing few migrations and making use of the appropriate Active Record macros,
 we will be able to:
 
 - ask an Artist about its songs and genres
@@ -45,8 +45,8 @@ that joins between our `artists` and `genres` tables.
 
 To run the migrations, run:
 
-```console
-$ bundle exec rake db:migrate
+```sh
+bundle exec rake db:migrate
 ```
 
 ### Building our Associations using Active Record Macros
@@ -95,20 +95,20 @@ We can now call methods on the objects we associated with one another. Let's
 play around with our code using the console task we wrote for you in the
 `Rakefile`. Run the migrations (if you haven't already):
 
-```console
-$ bundle exec rake db:migrate
+```sh
+bundle exec rake db:migrate
 ```
 
 Then seed the database:
 
-```console
-$ bundle exec rake db:seed
+```sh
+bundle exec rake db:seed
 ```
 
 Then open the console:
 
-```console
-$ bundle exec rake console
+```sh
+bundle exec rake console
 ```
 
 Then try out some methods:
@@ -215,7 +215,7 @@ We'll do a handful of methods like this one for the `Song`, `Artist`, and
 `Genre` classes. This lab is test-driven, so follow the specs and read the test
 error messages for additional information.
 
-The below methods are defined in the `artist.rb`, `genre.rb` and `song.rb` files
+The below methods are defined in the `artist.rb`, `genre.rb` and `song.rb`
 within `app/models`, but are all currently empty. Write implementations for each
 using ActiveRecord methods.
 
